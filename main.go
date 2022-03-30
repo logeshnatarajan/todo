@@ -11,7 +11,7 @@ import (
 )
 
 type Todo struct {
-	WORKS string `json:"works"`
+	WORKS string `json:"work"`
 	ID    string `json:"id"`
 }
 
