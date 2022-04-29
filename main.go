@@ -20,8 +20,9 @@ var Todos []Todo
 func main() {
 	
 	Todos = append(Todos, Todo{WORKS: "brushing", ID: "1"}, Todo{WORKS: "bathing", ID: "2"})
-
+      
 	r := mux.NewRouter()
+	// three methods get,post,delete TODO: update has your homework
 	r.HandleFunc("/get", gettodo).Methods("GET")
 	r.HandleFunc("/add", addtodo).Methods("POST")
 	r.HandleFunc("/delete/{id}", deletetodo).Methods("DELETE")
