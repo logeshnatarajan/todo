@@ -18,7 +18,7 @@ type Todo struct {
 var Todos []Todo
 
 func main() {
-	// everything starts here 
+	
 	Todos = append(Todos, Todo{WORKS: "brushing", ID: "1"}, Todo{WORKS: "bathing", ID: "2"})
 
 	r := mux.NewRouter()
